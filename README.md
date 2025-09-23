@@ -70,7 +70,7 @@ Create `.env.local` file:
 ```env
 MNEMONIC="your twelve word mnemonic phrase"
 BLOCKDAG_RPC_URL="https://rpc-testnet.blockdag.network"
-BLOCKDAG_CHAIN_ID=12345
+BLOCKDAG_CHAIN_ID=#### (use official Chain ID)
 ```
 
 4. **Deploy smart contract**
