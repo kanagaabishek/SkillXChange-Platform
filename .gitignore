@@ -39,3 +39,55 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Hardhat & Blockchain
+/blockchain/cache
+/blockchain/artifacts
+/blockchain/node_modules
+*.log
+
+# Hardhat network files
+/blockchain/cache/
+/blockchain/artifacts/
+hardhat-shorthand.log*
+
+# Solidity coverage files
+coverage/
+coverage.json
+.coverage_artifacts
+.coverage_cache
+.coverage_contracts
+
+# Hardhat deployment files (optional - you might want to keep these)
+deployments/
+/deployments/
+
+# Hardhat Ignition default folder for deployments against a local node
+ignition/deployments/chain-31337/
+
+# Private keys and sensitive data
+*.key
+*.secret
+wallet.json
+.secret
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+Thumbs.db
+.DS_Store?
+ehthumbs.db
+Icon?
+
+# Debug files
+debug-*.js
+debug-*.cjs
+debug-*.mjs
+test-*.js
+test-*.cjs
+test-*.mjs

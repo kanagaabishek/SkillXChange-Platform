@@ -1,0 +1,25 @@
+{
+  "address": "0xF342E904702b1D021F03f519D6D9614916b03f37",
+  "abi": [
+    "constructor()",
+    "event CourseCreated(uint256 indexed,string,address indexed,uint256)",
+    "event CourseDeactivated(uint256 indexed)",
+    "event CoursePurchased(uint256 indexed,address indexed,address indexed,uint256)",
+    "function courseCounter() view returns (uint256)",
+    "function courses(uint256) view returns (uint256,string,string,uint256,address,string,bool,uint256)",
+    "function createCourse(string,string,uint256,string) returns (uint256)",
+    "function deactivateCourse(uint256)",
+    "function enrollments(uint256,address) view returns (bool)",
+    "function getAllActiveCourses() view returns (uint256[])",
+    "function getCourseInfo(uint256) view returns (uint256,string,string,uint256,address,bool,uint256)",
+    "function getCourseZoomLink(uint256) view returns (string)",
+    "function getInstructorCourses(address) view returns (uint256[])",
+    "function getStudentCourses(address) view returns (uint256[])",
+    "function getTotalCourses() view returns (uint256)",
+    "function instructorCourses(address,uint256) view returns (uint256)",
+    "function isEnrolled(uint256,address) view returns (bool)",
+    "function owner() view returns (address)",
+    "function purchaseCourse(uint256) payable",
+    "function studentCourses(address,uint256) view returns (uint256)"
+  ]
+}
