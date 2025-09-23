@@ -93,7 +93,7 @@ Visit `http://localhost:3000` to see the application.
 1. Add BlockDAG Testnet to MetaMask:
    - **Network Name**: BlockDAG Testnet
    - **RPC URL**: https://rpc-testnet.blockdag.network
-   - **Chain ID**: 12345
+   - **Chain ID**: 1043
    - **Currency**: BDAG
 
 2. Get testnet tokens from the faucet
