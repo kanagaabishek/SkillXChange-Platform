@@ -63,6 +63,96 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* AI Assistant Feature */}
+      {isConnected && (
+        <section className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div className="space-y-6">
+                <div className="space-y-3">
+                  <div className="inline-flex items-center px-3 py-1 bg-blue-100 rounded-full text-sm font-medium text-blue-800">
+                    🤖 New Feature
+                  </div>
+                  <h2 className="text-3xl font-bold text-gray-900">
+                    Meet Your AI Learning Assistant
+                  </h2>
+                  <p className="text-lg text-gray-600">
+                    Get personalized course recommendations, skill analysis, and career guidance 
+                    powered by advanced AI. SkillBot understands your learning journey and helps 
+                    you achieve your goals faster.
+                  </p>
+                </div>
+                
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                      <span className="text-blue-600">🔍</span>
+                    </div>
+                    <span className="text-gray-700">Smart skill analysis from your enrolled courses</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                      <span className="text-green-600">📚</span>
+                    </div>
+                    <span className="text-gray-700">Personalized course recommendations</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
+                      <span className="text-purple-600">💬</span>
+                    </div>
+                    <span className="text-gray-700">Interactive chat for learning guidance</span>
+                  </div>
+                </div>
+
+                <Link 
+                  href="/ai-assistant"
+                  className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all shadow-lg shadow-blue-200"
+                >
+                  Try AI Assistant
+                  <svg className="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
+                </Link>
+              </div>
+
+              <div className="relative">
+                <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100">
+                  <div className="flex items-center space-x-3 mb-4">
+                    <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+                      <span className="text-white font-bold">🤖</span>
+                    </div>
+                    <div>
+                      <div className="font-semibold text-gray-800">SkillBot</div>
+                      <div className="text-xs text-gray-500">AI Learning Assistant</div>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-3">
+                    <div className="bg-gray-100 p-3 rounded-lg rounded-bl-none">
+                      <div className="text-sm text-gray-800">
+                        Hi! I can analyze your skills and recommend courses to help you grow. 
+                        What would you like to learn?
+                      </div>
+                    </div>
+                    <div className="bg-blue-500 text-white p-3 rounded-lg rounded-br-none ml-8">
+                      <div className="text-sm">
+                        I want to become a full-stack developer
+                      </div>
+                    </div>
+                    <div className="bg-gray-100 p-3 rounded-lg rounded-bl-none">
+                      <div className="text-sm text-gray-800">
+                        Great choice! Based on current trends, I recommend starting with JavaScript, 
+                        React, and Node.js. Let me find relevant courses for you...
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Featured Courses */}
       <section className="space-y-8">
         <div className="text-center">

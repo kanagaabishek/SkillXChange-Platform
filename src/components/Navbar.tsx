@@ -72,6 +72,14 @@ export default function Navbar() {
               </Link>
               {isConnected && (
                 <Link 
+                  href="/ai-assistant" 
+                  className="text-gray-600 hover:text-orange-600 transition-colors font-medium"
+                >
+                  AI Assistant
+                </Link>
+              )}
+              {isConnected && (
+                <Link 
                   href="/my-courses" 
                   className="text-gray-600 hover:text-orange-600 transition-colors font-medium"
                 >
@@ -134,6 +142,14 @@ export default function Navbar() {
             >
               Create Course
             </Link>
+            {isConnected && (
+              <Link 
+                href="/ai-assistant" 
+                className="text-gray-600 hover:text-orange-600 transition-colors py-2 font-medium"
+              >
+                AI Assistant
+              </Link>
+            )}
             {isConnected && (
               <Link 
                 href="/my-courses" 
