@@ -2,7 +2,11 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 import { Course } from '../types';
 
 // Initialize Gemini API with environment variable
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || 'AIzaSyBKP4TuyJBcQmoY7FuYnZ-0alIrrVJcYUM');
+const apiKey = process.env.GEMINI_API_KEY;
+if (!apiKey) {
+  throw new Error('GEMINI_API_KEY environment variable is required');
+}
+const genAI = new GoogleGenerativeAI(apiKey);
 
 export interface UserProfile {
   address: string;
@@ -74,8 +78,7 @@ export class AISkillAssistant {
   private chatHistory: ChatMessage[] = [];
 
   async analyzeUserSkills(
-    userProfile: UserProfile,
-    _availableCourses: Course[]
+    userProfile: UserProfile
   ): Promise<SkillAnalysis> {
     try {
       const prompt = this.buildSkillAnalysisPrompt(userProfile);

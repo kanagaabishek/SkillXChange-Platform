@@ -109,7 +109,7 @@ export function useSkillAnalysis() {
     setError(null);
 
     try {
-      const analysis = await aiSkillAssistant.analyzeUserSkills(userProfile, availableCourses);
+      const analysis = await aiSkillAssistant.analyzeUserSkills(userProfile);
       setSkillAnalysis(analysis);
 
       // Update user profile with new analysis
