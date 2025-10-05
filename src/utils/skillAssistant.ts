@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
-// Initialize Gemini API with the provided key
-const genAI = new GoogleGenerativeAI('AIzaSyBKP4TuyJBcQmoY7FuYnZ-0alIrrVJcYUM');
+// Initialize Gemini API with environment variable
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 export interface SkillAnalysisRequest {
   userCourses: Array<{
