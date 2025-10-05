@@ -33,7 +33,7 @@ export interface SkillRecommendation {
 }
 
 export class SkillAssistantService {
-  private model = genAI.getGenerativeModel({ model: 'gemini-1.0-pro-latest' });
+  private model = genAI.getGenerativeModel({ model: 'gemini-2.5.flash' });
 
   async analyzeSkillsAndRecommend(request: SkillAnalysisRequest): Promise<SkillRecommendation> {
     try {
