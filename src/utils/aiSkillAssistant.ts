@@ -2,9 +2,9 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 import { Course } from '../types';
 
 // Initialize Gemini API with environment variable
-const apiKey = process.env.GEMINI_API_KEY;
+const apiKey = process.env.NEXT_PUBLIC_GEMINI_API_KEY;
 if (!apiKey) {
-  throw new Error('GEMINI_API_KEY environment variable is required');
+  throw new Error('NEXT_PUBLIC_GEMINI_API_KEY environment variable is required');
 }
 const genAI = new GoogleGenerativeAI(apiKey);
 
